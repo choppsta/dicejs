@@ -1,0 +1,32 @@
+{
+  "friendlyName": "Dice",
+  "name": "dicejs",
+  "description": "js library for making random decisions/pick random items with the focus on a readable API",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Choppsta",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/choppsta/dicejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/choppsta/dicejs/issues"
+  },
+  "homepage": "https://github.com/choppsta/dicejs",
+  "module": "./lib/dice.es5.js",
+  "main": "./lib/dice.min.js",
+  "scripts": {
+    "babel": "babel ./src/Dice.js --out-file ./lib/dice.es5.js",
+    "webpack": "webpack --progress --colors",
+    "build": "npm run babel && npm run webpack"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^3.19.0",
+    "webpack": "^2.4.1"
+  }
+}
